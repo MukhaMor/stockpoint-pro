@@ -1,36 +1,13 @@
 # StockPoint Pro
 
-A desktop point-of-sale and inventory management application built with C++17 and Qt Widgets.
+StockPoint Pro is a desktop point-of-sale and inventory app written in C++17 with Qt Widgets.
 
-## Features
+It handles three customer types (regular, frequent, and wholesale), several product types, and services. The app can record sales, stock entries, and returns, update inventory after stock movements, and show reports for inventory, sales, and customers.
 
-- Manage regular, frequent, and wholesale customers.
-- Manage perishable, non-perishable, and electronic products, plus services.
-- Record sales, inventory entries, and returns.
-- Update inventory when stock movements are recorded.
-- Review inventory, sales, and customer reports.
-
-## Requirements
-
-- CMake 3.16 or newer.
-- A C++17 compiler.
-- Qt 5 or Qt 6 with the Widgets module.
+The app currently keeps its records in memory. Closing it clears the data.
 
 ## Build
 
-Open `CMakeLists.txt` in Qt Creator, select a Desktop kit with Qt Widgets, then configure, build, and run the project.
+Open `CMakeLists.txt` in Qt Creator and select a Desktop kit with Qt Widgets (Qt 5 or Qt 6). Configure the project, then build and run it.
 
-Or use CMake from a shell where Qt is discoverable:
-
-```bash
-cmake -S . -B build
-cmake --build build
-```
-
-If CMake cannot find Qt, set `CMAKE_PREFIX_PATH` to the Qt installation for your compiler and platform.
-
-## Data storage
-
-The application currently keeps records in memory. Data entered during a session is cleared when the application closes.
-
-
+The project uses CMake 3.16 and C++17.
