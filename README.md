@@ -1,4 +1,3 @@
-Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.
 # StockPoint Pro
 
 A desktop point-of-sale and inventory management application built with C++17 and Qt Widgets.
